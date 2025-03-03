@@ -1,0 +1,3 @@
+C:/Users/lukal/CLionProjects/P4/cmake-build-debug/CMakeFiles/P4.dir
+C:/Users/lukal/CLionProjects/P4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lukal/CLionProjects/P4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
