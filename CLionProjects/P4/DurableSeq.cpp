@@ -87,12 +87,8 @@ void DurableSeq::reset() {
 }
 
 int DurableSeq::getLength() { return length; }
-std::string DurableSeq::getFilePath() { return filePath; }
 
-void DurableSeq::assignNewFilePath() {
-    filePath = "durable_seq_copy_" + std::to_string(time(nullptr)) + ".txt";
-    saveToFile();
-}
+std::string DurableSeq::getFilePath() { return filePath; }
 
 DurableSeq::~DurableSeq() {
     if (isDirty) saveToFile();

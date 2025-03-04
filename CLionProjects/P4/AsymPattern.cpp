@@ -83,8 +83,7 @@ std::shared_ptr<int[]> AsymPattern::getKeys() const {
     return result;
 }
 
-//note that the only way users can access ap elements through [] is through keys which are given to them
-std::shared_ptr<ArithSeq> &AsymPattern::operator[](int key) {
+std::shared_ptr<ArithSeq> AsymPattern::operator[](int key) {
     for (int i = 0; i < length; i++) {
         if (keys[i] == key) return ap[i];
     }

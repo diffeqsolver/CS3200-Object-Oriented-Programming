@@ -214,10 +214,10 @@ bool testAPIncrement() {
 
         //post increment
         for (int i = 0; i < 3; i++) {
-            int beforeIncrement = pattern1[key0]->getKthVal(1);
+            int beforeIncrement = pattern1[key1]->getKthVal(1);
             //should update values AFTER evaluation
             pattern1++;
-            int afterIncrement = pattern1[key0]->getKthVal(1);
+            int afterIncrement = pattern1[key1]->getKthVal(1);
 
             if (afterIncrement != beforeIncrement + 1) {
                 std::cerr << "Failure of post-increment in iteration " << i
@@ -373,10 +373,10 @@ bool testAPDecrement() {
 
         //post decrement
         for (int i = 0; i < 3; i++) {
-            int beforeDecrement = pattern1[key0]->getKthVal(1);
+            int beforeDecrement = pattern1[key1]->getKthVal(1);
             //should update values AFTER evaluation
             pattern1--;
-            int afterDecrement = pattern1[key0]->getKthVal(1);
+            int afterDecrement = pattern1[key1]->getKthVal(1);
 
             if (afterDecrement != beforeDecrement - 1) {
                 std::cerr << "Failure of post-decrement in iteration " << i

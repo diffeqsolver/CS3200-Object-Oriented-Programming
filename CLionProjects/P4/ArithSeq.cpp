@@ -1,8 +1,7 @@
 ﻿#include "ArithSeq.h"
 #include <stdexcept>
 #include <memory>
-//class invariant - note that [] operator does not allow modification
-//as it returs an int by value and not by reference
+
 ArithSeq::ArithSeq(int firstTerm, int commonDiff, int length, int maxOperations) {
     if (length <= 0 || maxOperations <= 0) {
         throw std::invalid_argument("length and maxOperations must be positive");
